@@ -8,7 +8,7 @@ import menu from '$lib/config/menu'
 import { goto } from '$app/navigation'
 import { browser } from '$app/environment'
 
-export let data
+// export let data
 
 let q = ''
 let showSidebar = false

@@ -8,11 +8,15 @@ import Cookie from 'cookie-universal'
 import dayjs from 'dayjs'
 import SEO from '$lib/components/SEO/index.svelte'
 import { CollectionService, DealsService, ProductService } from '$lib/services'
+import { DOMAIN, HTTP_ENDPOINT } from 'lib/config'
 
 const cookies = Cookie()
 let today = dayjs(new Date()).toISOString()
 
 export let data: any = {}
+
+console.log('ENV? DOMAIN?', DOMAIN)
+console.log('ENV? HTTP_ENDPOINT?', HTTP_ENDPOINT)
 
 let seoProps = {
 	// addressCountry: 'India',

@@ -6,6 +6,9 @@ export const load = async ({ parent, data, fetch, url }) => {
 	await parent()
 	try {
 		const res2 = await fetch('/server/store')
+    // ! SAHIL
+    console.log("🚀 data.storeId:", data.storeId)
+    
 		const storeFromServer = await res2.json()
 		// locals.storeId = storeFromServer.store?.id
 		data.store = storeFromServer.store
